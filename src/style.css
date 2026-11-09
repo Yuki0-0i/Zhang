@@ -1,0 +1,80 @@
+:root {
+  --bg: #f2f6ff;
+  --bg-soft: #ffffff;
+  --ink: #383838;
+  --ink-soft: #585858;
+  --ink-dim: #9ca3af;
+  --line: #e5e7eb;
+  --line-strong: #d1d5db;
+  --accent: #2f7fd8;
+  --accent-strong: #1e5fae;
+  --accent-blue: #5da9ff;
+  --accent-blue-strong: #3b8ce8;
+  --accent-bg: rgba(93, 169, 255, 0.1);
+  --blue-bg: rgba(93, 169, 255, 0.08);
+  --tile1: #7ecaf6;
+  --tile2: #7bd0c1;
+  --tile3: #8499e7;
+  --tile4: #5da9ff;
+  --tile5: #ae85ca;
+  --tile6: #c75b9b;
+  --serif: 'Source Serif 4', 'Noto Serif SC', Georgia, 'Times New Roman', serif;
+  --sans: 'Inter', 'PingFang SC', 'Microsoft YaHei', system-ui, -apple-system, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--sans);
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, p {
+  margin-top: 0;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.section {
+  max-width: 1060px;
+  margin: 0 auto;
+  padding: 56px 24px 16px;
+}
+
+.section-title {
+  font-family: var(--serif);
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--ink);
+  letter-spacing: 0.02em;
+  margin-bottom: 24px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--line);
+  position: relative;
+}
+
+.tick {
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 46px;
+  height: 2px;
+  background: var(--accent);
+}
+
+::selection {
+  background: rgba(93, 169, 255, 0.18);
+}
